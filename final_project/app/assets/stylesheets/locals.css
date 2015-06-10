@@ -9,8 +9,8 @@ header {
 	z-index: 9999999999;
 	width: 1280px;
 	
-	color: snow;
-	background-color: dimgrey;
+	color: yellowgreen;
+	background-color: rgb(50,50,50);
 	box-shadow: 1px 1px 1px 1px lightgray;
 
 }
@@ -28,21 +28,20 @@ header {
 	margin-right: 100px;
 	margin-left: 50px;
 	border-left: solid;
-	border-color: darkgrey;
+	border-color: gainsboro;
 	border-width: 1px;
 	position: fixed;
 	z-index: 9999999998;
 	color: dimgrey;
-	
-	
 }
+
 a {	
 	text-decoration: none;
 	color: dimgrey;
 }
 
 a:hover {
-	color: orange;
+	color: yellowgreen;
 }
 
 body {
@@ -85,15 +84,17 @@ footer {
 	text-align: center;
 	border-top: solid;
 	border-width: 1px;
-	border-color: dimgrey;
-	margin-top: 10px;
-	padding-top: 30px;
+	border-color: gainsboro;
+	margin-top: 0px;
+	padding-top: 40px;
 	margin-right: 0px;
 	padding-bottom: 30px;
+	background-color: snow;
+	z-index: 999999999999;
 }
 
 .right  {
-	width: 180px;
+	width: 200px;
 	float: right;
 	text-align: left;
 	font-size: 18px;
@@ -108,20 +109,19 @@ footer {
 	position: fixed;
 	
 	color: dimgrey;
-	
 }
 
 .restaurante1 {
+	font-size: 18px;
 	width: 510px;
 	background-color: white;
 	margin-top: 67px;
-	padding-top: 50px;
+	padding-top: 48px;
 	padding-left: 60px;
 	margin-left: -75px;
 	padding-right: 60px;
 	padding-bottom: 30px;
 	box-shadow: 0px 1px 0px 1px lightgray;
-	
 }
 
 #map-canvas {
@@ -134,7 +134,7 @@ footer {
 
 .botonatras {
 	margin-left: 367px;
-	margin-top: 20px;
+	width: 25px;
 	margin-bottom: 40px;
 	padding-top: 50px;
 
@@ -144,15 +144,97 @@ footer {
 	width: 35px;
 }
 
-hr {
-	margin-bottom: 40px;
+.pequena {
+	width: 150px;
+	margin-right: 50px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
 
-.pequena {
-	width: 200px;
-	margin-right: 50px;
-	margin-top: 10px;
+.grande {
+	width: 400px;
+	margin-right: 100px;
+	margin-left: 150px;
+	margin-bottom: 20px;
 }
+
+.lupa {
+	width: 17px;
+}
+
+.puntos {
+	width: 20px;
+}
+
+hr {
+	margin-bottom: 40px;
+	background-color: gainsboro;
+	height: 1px;
+	border: 0;
+	color: blue;
+}
+
+.modalmask {
+    position: fixed;
+    font-family: 'Helvetica';
+    font-size: 20px;
+    color: dimgrey;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalbox{
+    width: 800px;
+    position: relative;
+    padding: 5px 20px 200px 20px;
+    background: snow;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+}
+
+.movedown {
+    margin: 0 auto;
+}
+
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+
+.close {
+    
+    color: dimgrey;
+    line-height: 25px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+}
+ 
+.close:hover {
+    
+    color: yellowgreen;
+}
+
+
 
 
 

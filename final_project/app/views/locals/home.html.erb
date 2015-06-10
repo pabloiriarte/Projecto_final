@@ -1,20 +1,7 @@
- <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="">
-
-        <title></title>
-    </head>
-
     <body>
     	
-        <aside class="left"><p><%= link_to 'Home', root_path %></p><p><%= link_to 'Veganos', locals_path %></p><p><%= link_to 'Celíacos', locals_path %></p><p> Vegetarianos </p><p> Sin Lactosa </p></aside>
+        <aside class="left"><p><%= link_to 'Home', root_path %></p><p><%= link_to 'Veganos', locals_path %></p><p><%= link_to 'Celíacos', locals_path %></p><p><%= link_to 'Vegetarianos', locals_path %></p><p><%= link_to 'Sin lactosa', locals_path %></p></aside>
 
-        <aside class="right"> Galeria <hr>
-            <img class="pequena" src="http://www.restauranteelbuey.es/restauranteelbuey_logo.png">
-            <img class="pequena" src="http://www.rodilla.es/wp-content/uploads/2013/02/logo-rodilla-Proporcionado-407x300.jpg">
-            <img class="pequena" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKyK-lG2QV7HdBkjYBzzJGVZrnPSt4Mt_AMjJOIgdzOCdUBHl6">
         </aside>
         
     	
@@ -30,7 +17,7 @@
         <div class="info">
             <div class="restaurante1">
 
-            Resultados encontrados...
+            <img class="lupa" src="../ic_search_black_48dp.png"> Todos los resultados encontrados...
             <hr>
 
         	<% @locals.each do |local| %>
@@ -48,19 +35,22 @@
             <p><span class="enlaces"> <%= link_to 'Ver más', local_path(local) %></span></p>
             <% end %>
 
+            <% @locals.each do |local| %>
+            <p><strong><%= local.name %></strong><br>
+            <p><span class="enlaces"> <%= link_to 'Ver más', local_path(local) %></span></p>
+            <% end %>
+
             </div>
         </div>
 
-    <script type="text/javascript" src=""></script>
+        
+
+
+
+   
     </body>
 
-     <footer>
 
-        My Searcher® - Pablo Iriarte Martínez de Lecea
-
-    </footer>
-
-</html>
 
 
 

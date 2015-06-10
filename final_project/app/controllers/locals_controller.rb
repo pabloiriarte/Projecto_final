@@ -6,8 +6,11 @@
 	end
 
 	def index
-		@locals = Local.all
-		
+		if params[:category]
+			@locals = Local.filter_by_category params[:category]
+		else
+			@locals = Local.all
+		end
 	end
 
 	def show

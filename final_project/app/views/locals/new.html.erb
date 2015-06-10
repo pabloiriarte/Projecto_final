@@ -1,0 +1,32 @@
+<body>
+
+new posts
+
+<div class="info1">
+
+<%= form_for :post do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :type_of_food %><br>
+    <%= f.text_area :type_of_food %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+</div>
+
+</body>
+
+
+
+
+
+
+

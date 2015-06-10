@@ -1,21 +1,5 @@
- <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="">
-
-        <title></title>
-    </head>
-
-    <body>
+ <body>
     	
-        <aside class="left"><p><%= link_to 'Home', root_path %></p><p><%= link_to 'Veganos', locals_path %></p><p><%= link_to 'Celíacos', locals_path %></p><p> Vegetarianos </p><p> Sin Lactosa </p></aside>
-
-        <aside class="right"> Galeria <hr>
-            <img class="pequena" src="http://www.restauranteelbuey.es/restauranteelbuey_logo.png">
-            <img class="pequena" src="http://www.rodilla.es/wp-content/uploads/2013/02/logo-rodilla-Proporcionado-407x300.jpg">
-        </aside>
-
         <span class="searching">
             <%= form_tag locals_search_path, :method => 'post' do %>
             <p>
@@ -24,12 +8,18 @@
             </p>
             <% end %>
         </span>
-    <div class="info">
+        
+        <div class="info">
 
             <div class="restaurante1">
 
-            Resultados encontrados...
+            <img class="lupa" src="../ic_search_black_48dp.png"> Resultados filtrados...
             <hr>
+
+            <% @locals.each do |local| %>
+            <p><strong><%= local.name %></strong><br>
+            <p><span class="enlaces"> <%= link_to 'Ver más', local_path(local) %></span></p>
+            <% end %>
 
             <% @locals.each do |local| %>
             <p><strong><%= local.name %></strong><br>
@@ -48,18 +38,21 @@
 
             </div>
         </div>
+        <ul>
+            
+          
+        </ul>
+        
+        
+</div>
 
         <script type="text/javascript" src=""></script>
-    </body>
+</body>
 
-    <footer>
-
-        My Searcher® - Pablo Iriarte Martínez de Lecea
-
-    </footer>
+    
 
 
-</html>
+
 
 
 

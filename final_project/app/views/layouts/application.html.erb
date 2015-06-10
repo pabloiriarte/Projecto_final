@@ -8,14 +8,58 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 </head>
 <body>
+
 	<header>
          <img class="searchicon" src="../ic_location_on_white_48dp.png"> My Searcher
     </header>
+
+    <aside class="left">
+    	<p><%= link_to 'Home', root_path %></p>
+    	<p><%= link_to 'Veganos', locals_path(:category => "vegan_food") %></p>
+    	<p><%= link_to 'Celíacos', locals_path(:category => "celiacous_food") %></p>
+    	<p><%= link_to 'Vegetarianos', locals_path %></p>
+    	<p><%= link_to 'Sin lactosa', locals_path %></p>
+    </aside>
+
+        <aside class="right"> <a href="#modal1"><img class="lupa" src="../ic_arrow_drop_down_circle_black_48dp.png"> Galería </a><hr>
+             
+            <img class="pequena" src="http://www.restauranteelbuey.es/restauranteelbuey_logo.png">
+
+            <hr>
+
+            <img class="puntos" src="../ic_more_horiz_black_48dp.png">
+            
+    </aside>
+
+    <div id="modal1" class="modalmask">
+            <div class="modalbox movedown">
+                
+                <a href="#close" title="Close" class="close">X</a>
+                <p>Galería</p><hr>
+                <ul id="carousel">
+                  <img class="grande" src="http://www.restauranteelbuey.es/restauranteelbuey_logo.png">
+                  <img class="grande" src="http://www.rodilla.es/wp-content/uploads/2013/02/logo-rodilla-Proporcionado-407x300.jpg">
+                  <img class="grande" src="image3.jpg">
+                  <img class="grande" src="image4.jpg">
+                  <img class="grande" src="image5.jpg">
+                </ul>
+
+            </div>
+        </div>
 
 <%= yield %>
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src=""></script>
+<script src="http://notoyontoy.site40.net/Js/jquery.infinitecarousel3.min.js"></script>
 </body>
+
+<footer>
+
+        My Searcher® - Pablo Iriarte Martínez de Lecea
+
+</footer>
+
 </html>
  
