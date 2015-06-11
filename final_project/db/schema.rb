@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20150601085450) do
     t.boolean  "celiacous_food", default: false
     t.boolean  "vegan_food",     default: false
     t.float    "latitude"
-    t.float    "altitude"
+    t.float    "longitude"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
   end

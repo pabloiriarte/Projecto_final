@@ -22,8 +22,28 @@
 		end
 	end
 
+	def new
+		@local = Local.new
+	end
+
+	def create
+		@local = Local.new local_params
+
+		if @local.save
+			flash[:notice] = 'New local added successfully'
+			redirect_to locals_path
+		else
+			flash[:alert] = 'Local not added'
+			render 'new'
+		end
+	end
+
 	def search
 		@locals = Local.search_by_criteria params[:search]
 		render 'home'
+	end
+	private
+	def local_params
+		params.require(:local).permit(:name, :type_of_food, :location, :latitude, :longitude)
 	end
 end

@@ -4,7 +4,7 @@ new posts
 
 <div class="info1">
 
-<%= form_for :post do |f| %>
+<%= form_for [@local] do |f| %>
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -13,6 +13,11 @@ new posts
   <p>
     <%= f.label :type_of_food %><br>
     <%= f.text_area :type_of_food %>
+  </p>
+
+  <p>
+    <%= f.label :location %><br>
+    <%= f.text_area :location %>
   </p>
  
   <p>

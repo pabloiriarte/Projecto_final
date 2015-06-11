@@ -13,15 +13,15 @@
 
         <div class="info1">
 
-        <p><strong><%= @local.name %></strong></p>
+        <p><strong><div class="name"><%= @local.name %></div></strong></p>
         <hr>
         <p><strong>Tipo de comida: </strong> <%= @local.type_of_food %></p>
-        <p><strong>Dirección: </strong> <%= @local.location %></p>
+        <p><strong>Dirección: </strong> 
+
+        <span class="direction"><%= @local.location %></span></p>
 
         </div>
-        <div id="map-canvas">
-
-        </div>
+        <div id="map-canvas"></div>
 
         <p class="botonatras"><%= link_to 'Atras', root_path %></p>
 

@@ -7,7 +7,7 @@ class CreateLocals < ActiveRecord::Migration
     	t.boolean 	:celiacous_food, default: false
     	t.boolean 	:vegan_food, default: false
       t.float     :latitude
-      t.float     :altitude
+      t.float     :longitude
 
 
       t.timestamps null: false

@@ -21,10 +21,10 @@ function initialize(map) {
 	if (map){
             var mapCanvas = document.getElementById('map-canvas'); 
             var latitude = map.latitude;
-            var altitude = map.altitude;
-            var myLatLng = new google.maps.LatLng(latitude,altitude);
+            var longitude = map.longitude;
+            var myLatLng = new google.maps.LatLng(latitude,longitude);
             var mapOptions = {
-              center: new google.maps.LatLng(latitude, altitude),
+              center: new google.maps.LatLng(latitude, longitude),
               zoom: 18,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             }
