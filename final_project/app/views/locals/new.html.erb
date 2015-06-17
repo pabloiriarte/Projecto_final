@@ -1,8 +1,10 @@
 <body>
 
-new posts
-
 <div class="info1">
+
+<p><strong><div class="name"><img class="lupa" src="ic_mode_edit_black_48dp"> Enter here a new local </strong></p></div>
+<hr>
+
 
 <%= form_for [@local] do |f| %>
   <p>
@@ -18,6 +20,13 @@ new posts
   <p>
     <%= f.label :location %><br>
     <%= f.text_area :location %>
+  </p>
+
+  <p> 
+    <%= f.label :celiacous_food, "Comida Celiaca"  %>
+    <%= f.check_box :celiacous_food %><br>
+    <%= f.label :vegan_food, "Comida Vegana"  %>
+    <%= f.check_box :vegan_food %><br>
   </p>
  
   <p>

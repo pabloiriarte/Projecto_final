@@ -42,13 +42,22 @@ function initialize(map) {
     }
   
   
-  $(".pequena").click(function(){
+  /*$(".pequena").click(function(){
   $("#uno").fadeIn('slow');
   
   });
-  
+  */
 });
 
+var NumImg = 0
+
+event timming(1000) {
+  $ (".pequena").html( "<img src='" + NumImg + '">' );
+
+if( NumImg >= 5 )
 
 
+  NumImg = 0;
+
+};
 

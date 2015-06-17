@@ -17,33 +17,12 @@
             <hr>
 
             <% @locals.each do |local| %>
-            <p><strong><%= local.name %></strong><br>
-            <p><span class="enlaces"> <%= link_to 'Ver más', local_path(local) %></span></p>
-            <% end %>
-
-            <% @locals.each do |local| %>
-            <p><strong><%= local.name %></strong><br>
-            <p><span class="enlaces"> <%= link_to 'Ver más', local_path(local) %></span></p>
-            <% end %>
-
-            <% @locals.each do |local| %>
-            <p><strong><%= local.name %></strong><br>
-            <p><span class="enlaces"> <%= link_to 'Ver más', local_path(local) %></span></p>
-            <% end %>
-
-            <% @locals.each do |local| %>
-            <p><strong><%= local.name %></strong><br>
-            <p><span class="enlaces"> <%= link_to 'Ver más', local_path(local) %></span></p>
+            <p><%= link_to local.name, local_path(local) %><span class="direction1"> - <%= local.location %> </span><br>
+            <hr>
             <% end %>
 
             </div>
         </div>
-        <ul>
-            
-          
-        </ul>
-        
-        
 </div>
 
         <script type="text/javascript" src=""></script>

@@ -38,12 +38,18 @@
 		end
 	end
 
+	def destroy
+		local = Local.find params[:id]
+		local.destroy
+		redirect_to locals_path
+	end
+
 	def search
 		@locals = Local.search_by_criteria params[:search]
 		render 'home'
 	end
 	private
 	def local_params
-		params.require(:local).permit(:name, :type_of_food, :location, :latitude, :longitude)
+		params.require(:local).permit(:name, :type_of_food, :location, :latitude, :longitude, :celiacous_food, :vegan_food)
 	end
 end
