@@ -17,7 +17,17 @@
             <hr>
 
             <% @locals.each do |local| %>
-            <p><%= link_to local.name, local_path(local) %><span class="direction1"> - <%= local.location %> </span><br>
+            <p><%= link_to local.name, local_path(local) %>
+            <% if local.celiacous_food == true %>
+                 <img class="icono" src="celiaco.png">
+            <% end %>
+            <% if local.vegetarian_food == true %>
+                 <img class="icono" src="zanahoria.png">
+            <% end %>
+            <% if local.vegan_food == true %>
+                 <img class="icono" src="vegano.png">
+            <% end %>
+                <span class="direction1"> - <%= local.location %> </span><br>
             <hr>
             <% end %>
 

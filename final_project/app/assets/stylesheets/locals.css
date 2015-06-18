@@ -18,12 +18,14 @@ header {
 	float: left;
 	text-align: left;
 	font-size: 18px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 150px;
 	padding-left: 30px;
-	padding-right: 89px;
-	margin-top: 130px;
+	padding-right: 44px;
+	border-right: solid;
+	border-color: lightgrey;
+	margin-top: 117px;
 	margin-right: 100px;
 	margin-left: 50px;
 	border-left: solid;
@@ -32,6 +34,7 @@ header {
 	position: fixed;
 	z-index: 9999999998;
 	color: dimgrey;
+
 }
 
 a {	
@@ -63,11 +66,18 @@ body {
 }
 
 .info {
-	margin-left: 390px;
+	width: 937px;
+	height: 500px;
+	margin-left: 345px;
 	padding-top: 50px;
-	margin-right: 380px;
 	color: dimgrey;
 	text-align: justify;
+	background-color: white;
+}
+
+.nombre {
+	padding-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .info1 {
@@ -89,41 +99,38 @@ footer {
 	border-width: 1px;
 	border-color: gainsboro;
 	margin-top: 0px;
-	padding-top: 40px;
+	padding-top: 20px;
 	margin-right: 0px;
-	padding-bottom: 30px;
+	padding-bottom: 0px;
 	background-color: snow;
 	z-index: 999999999999;
 }
 
-.right  {
-	width: 200px;
-	float: right;
-	text-align: left;
-	font-size: 18px;
-	margin-bottom: 20px;
-	padding-top: 35px;
-	padding-bottom: 600px;
-	padding-left: 10px;
-	padding-right: 200px;
-	margin-top: 130px;
-	margin-right: 100px;
-	margin-left: 998px;
-	position: fixed;
-	color: dimgrey;
-}
-
 .restaurante1 {
+	font-size: 10px;
 	font-size: 18px;
-	width: 510px;
+	width: 420px;
 	background-color: white;
 	margin-top: 67px;
 	padding-top: 48px;
 	padding-left: 60px;
-	margin-left: -75px;
-	padding-right: 60px;
-	padding-bottom: 30px;
-	box-shadow: 0px 1px 0px 1px lightgray;
+	margin-left: -79px;
+	margin-right: 0px;
+	padding-bottom: 36px;
+	float: left;
+}
+
+.restaurante2 {
+	font-size: 18px;
+	width: 420px;
+	background-color: white;
+	margin-top: 67px;
+	padding-top: 68px;
+	padding-left: 60px;
+	margin-left: 0px;
+	padding-right: 50px;
+	padding-bottom: 36px;
+	float: right;
 }
 
 .direction1 {
@@ -141,13 +148,17 @@ footer {
 
 .botonatras {
 	margin-left: 367px;
-	width: 25px;
+	width: 400px;
 	margin-bottom: 40px;
-	padding-top: 50px;
+	text-align: center;
 }
 
 .searchicon {
 	width: 35px;
+}
+
+.enana {
+	width: 80px;
 }
 
 .pequena {
@@ -155,6 +166,10 @@ footer {
 	margin-right: 50px;
 	margin-left: 20px;
 	margin-bottom: 20px;
+}
+
+.imagenlat {
+	margin-right: 15px;
 }
 
 .grande {
@@ -242,6 +257,11 @@ hr {
     
     color: yellowgreen;
 }
+
+.icono {
+	width: 30px;
+}
+
 
 
 

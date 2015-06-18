@@ -50,6 +50,6 @@
 	end
 	private
 	def local_params
-		params.require(:local).permit(:name, :type_of_food, :location, :latitude, :longitude, :celiacous_food, :vegan_food)
+		params.require(:local).permit(:name, :type_of_food, :location, :latitude, :longitude, :celiacous_food, :vegan_food, :vegetarian_food )
 	end
 end

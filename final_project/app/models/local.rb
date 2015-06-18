@@ -34,6 +34,8 @@
 			return Local.where("celiacous_food = 't'")
 		when 'vegan_food'
 			return Local.where("vegan_food = 't'")
+		when 'vegetarian_food'
+			return Local.where("vegetarian_food = 't'")
 		end
 	end
 

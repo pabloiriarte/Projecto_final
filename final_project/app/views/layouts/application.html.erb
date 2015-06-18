@@ -15,21 +15,13 @@
 
     <aside class="left">
     	<p><%= link_to 'Home', root_path %></p>
-    	<p><%= link_to 'Veganos', locals_path(:category => "vegan_food") %></p>
-    	<p><%= link_to 'Celíacos', locals_path(:category => "celiacous_food") %></p>
-    	<p><%= link_to 'Vegetarianos', locals_path %></p>
+      <p><img class="icono" src="/celiaco.png"> <%= link_to 'Celíacos', locals_path(:category => "celiacous_food") %></p>
+    	<p><img class="icono" src="/vegano.png"> <%= link_to 'Veganos', locals_path(:category => "vegan_food") %></p>
+    	<p><img class="icono" src="/zanahoria.png"> <%= link_to 'Vegetarianos', locals_path(:category => "vegetarian_food") %></p>
     	<p><%= link_to 'Sin lactosa', locals_path %></p>
     </aside>
 
-        <aside class="right"> <a href="#modal1"><img class="lupa" src="../ic_arrow_drop_down_circle_black_48dp.png"> Galería </a><hr>
-             
-            <img class="pequena" src="http://www.restauranteelbuey.es/restauranteelbuey_logo.png">
-
-            <hr>
-
-            <img class="puntos" src="../ic_more_horiz_black_48dp.png">
-            
-    </aside>
+        
 
     <div id="modal1" class="modalmask">
             <div class="modalbox movedown">

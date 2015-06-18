@@ -1,4 +1,12 @@
 <body>
+        <span class="searching">
+            <%= form_tag locals_search_path, :method => 'post' do %>
+            <p>
+            <%= text_field_tag :search, params[:search] %>
+            <%= submit_tag "Search" %>
+            </p>
+            <% end %>
+        </span>
     	
         <div class="info1">
 
@@ -12,9 +20,12 @@
         </div>
         <div id="map-canvas"></div>
 
-        <p class"botonatras"><%= link_to 'Borrar', local_path(@local), method: :delete, data: {confirm: '¿Estas seguro?'} %></p>
+        <div class"botonatras">
 
-        <p class="botonatras"><%= link_to 'Atras', root_path %></p>
+            <p><%= link_to 'Borrar', local_path(@local), method: :delete, data: {confirm: '¿Estas seguro?'} %></p>
+
+            <p><%= link_to 'Atras', root_path %></p>
+        </div>
 
         
         

@@ -17,12 +17,13 @@ ActiveRecord::Schema.define(version: 20150601085450) do
     t.string   "name"
     t.text     "type_of_food"
     t.string   "location"
-    t.boolean  "celiacous_food", default: false
-    t.boolean  "vegan_food",     default: false
+    t.boolean  "celiacous_food",  default: false
+    t.boolean  "vegan_food",      default: false
+    t.boolean  "vegetarian_food", default: false
     t.float    "latitude"
     t.float    "longitude"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
 end
