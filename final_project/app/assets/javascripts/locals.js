@@ -11,12 +11,12 @@ function getMap(){
 		error: function(){ console.log('Error')} 
 	});
 }
-/*function recMap(map) {
+function recMap(map) {
 	console.log("hello recMap");
 	initialize(map);
 
 };
-*/
+
 function initialize(map) {
 	if (map){
             var mapCanvas = document.getElementById('map-canvas'); 
@@ -42,22 +42,23 @@ function initialize(map) {
     }
   
   
-  /*$(".pequena").click(function(){
+  $(".pequena").click(function(){
   $("#uno").fadeIn('slow');
   
   });
-  */
+  
 });
 
-var NumImg = 0
+$(document).ready(function() {
+    $(".info").show();
+    $(".info2").hide();
 
-event timming(1000) {
-  $ (".pequena").html( "<img src='" + NumImg + '">' );
+$(".button1").on("click",function() {
+    $(".info").hide();
+    $('.info2').show();
+  });
 
-if( NumImg >= 5 )
+});
 
 
-  NumImg = 0;
-
-};
 

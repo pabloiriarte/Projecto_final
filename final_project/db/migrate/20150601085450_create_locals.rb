@@ -9,6 +9,7 @@ class CreateLocals < ActiveRecord::Migration
       t.boolean   :vegetarian_food, default: false
       t.float     :latitude
       t.float     :longitude
+      t.string    :img_url
 
 
       t.timestamps null: false

@@ -10,20 +10,28 @@
 <body>
 
 	<header>
-         <img class="searchicon" src="../ic_location_on_white_48dp.png"> My Searcher
-    </header>
+        <img class="searchicon" src="../ic_location_on_white_48dp.png"> My Searcher
+        <span class="menubox"> <%= link_to 'Home', root_path, class: "menu" %>
+                            <%= link_to 'Registra', new_local_path, class: "menu" %>
+                            <%= link_to 'Contacto', locals_path, class: "menu" %>    
+        </span>
+  </header>
 
-    <aside class="left">
-    	<p><%= link_to 'Home', root_path %></p>
+  <aside class="left">
+      <div class="leftint">
+
+      <strong>Nuestros filtros</strong>
+    	
       <p><img class="icono" src="/celiaco.png"> <%= link_to 'Celíacos', locals_path(:category => "celiacous_food") %></p>
     	<p><img class="icono" src="/vegano.png"> <%= link_to 'Veganos', locals_path(:category => "vegan_food") %></p>
     	<p><img class="icono" src="/zanahoria.png"> <%= link_to 'Vegetarianos', locals_path(:category => "vegetarian_food") %></p>
-    	<p><%= link_to 'Sin lactosa', locals_path %></p>
-    </aside>
+    	
+      </div>
+  </aside>
 
         
 
-    <div id="modal1" class="modalmask">
+  <div id="modal1" class="modalmask">
             <div class="modalbox movedown">
                 
                 <a href="#close" title="Close" class="close">X</a>
@@ -37,7 +45,7 @@
                 </ul>
 
             </div>
-        </div>
+  </div>
 
 <%= yield %>
 
@@ -51,7 +59,7 @@
 
 <footer>
 
-        My Searcher® - Pablo Iriarte Martínez de Lecea
+        My Searcher® 2015 - Pablo Iriarte Martínez de Lecea
 
 </footer>
 

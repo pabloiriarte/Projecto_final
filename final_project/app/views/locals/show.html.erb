@@ -1,4 +1,5 @@
 <body>
+
         <span class="searching">
             <%= form_tag locals_search_path, :method => 'post' do %>
             <p>
@@ -7,28 +8,28 @@
             </p>
             <% end %>
         </span>
-    	
+
+
+    	<span><%= image_tag(@local.img_url, class: "perfil")%></span>
         <div class="info1">
 
-        <p><strong><div class="name"><%= @local.name %></div></strong></p>
+        <strong><span class="name"><%= @local.name %></span></strong>
         <hr>
+        
         <p><strong>Tipo de comida: </strong> <%= @local.type_of_food %></p>
         <p><strong>Dirección: </strong> 
 
         <span class="direction"><%= @local.location %></span></p>
 
-        </div>
         <div id="map-canvas"></div>
 
         <div class"botonatras">
 
             <p><%= link_to 'Borrar', local_path(@local), method: :delete, data: {confirm: '¿Estas seguro?'} %></p>
 
-            <p><%= link_to 'Atras', root_path %></p>
+        <div class="botonatras"><%= link_to 'Atras', root_path %></div>
         </div>
 
-        
-        
         <script type="text/javascript" src=""></script>
 </body>
 

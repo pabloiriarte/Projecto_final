@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20150601085450) do
     t.boolean  "vegetarian_food", default: false
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "img_url"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
   end

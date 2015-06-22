@@ -1,45 +1,86 @@
 header {
 	
-	font-size: 35px;
+	font-size: 30px;
 	padding-left: 35px;
 	margin-bottom: 50px;
-	padding-top: 30px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 25px;
 	position: fixed;
-	z-index: 9999999999;
+	z-index: 99999999;
 	width: 1280px;
 	color: yellowgreen;
 	background-color: rgb(50,50,50);
 	box-shadow: 1px 1px 1px 1px lightgray;
+ 
+}
+
+.menubox {
+	z-index: 99999999999;
+	margin-left: 265px;
+	font-size: 16px;
 
 }
 
+.menu {
+	margin-left: 20px;
+	font-size: 16px;
+	color: white;
+}
+
 .left {
+	width: 130px;
 	float: left;
 	text-align: left;
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 0px;
-	padding-top: 20px;
-	padding-bottom: 150px;
+	padding-top: 1px;
+	padding-bottom: 700px;
 	padding-left: 30px;
+	padding-right: 95px;
+	margin-top: 80px;
+	margin-right: 0px;
+	margin-left: 0px;
+	position: fixed;
+	color: dimgrey;
+	-webkit-box-shadow: 24px -6px 0px 1px rgba(0,0,0,0.19);
+	-moz-box-shadow: 24px -6px 0px 1px rgba(0,0,0,0.19);
+	box-shadow: 24px 0px 42px 1px rgba(0,0,0,0.19);
+}
+.leftint {
+	float: left;
+	text-align: left;
+	font-size: 16px;
+	margin-bottom: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 20px;
 	padding-right: 44px;
-	border-right: solid;
 	border-color: lightgrey;
-	margin-top: 117px;
+	margin-top: 50px;
 	margin-right: 100px;
-	margin-left: 50px;
+	margin-left: 20px;
 	border-left: solid;
 	border-color: gainsboro;
 	border-width: 1px;
 	position: fixed;
 	z-index: 9999999998;
 	color: dimgrey;
-
 }
 
 a {	
 	text-decoration: none;
 	color: dimgrey;
+	margin-right: 25px;
+}
+
+a:hover {
+	color: yellowgreen;
+}
+
+a {	
+	text-decoration: none;
+	color: dimgrey;
+	margin-right: 20px;
 }
 
 a:hover {
@@ -58,20 +99,28 @@ body {
 }
 
 .searching {
-	z-index: 99999999999999;
-	margin-top: 30px;
+	z-index: 99999999999;
+	margin-top: 15px;
 	float: right;
 	position: fixed;
-	padding-left: 1010px;
+	margin-left: 1040px;
+	padding-bottom: 20px;
 }
 
-.info {
-	width: 937px;
+.info, .info2{
+	width: 945px;
 	height: 500px;
-	margin-left: 345px;
-	padding-top: 50px;
+	margin-left: 335px;
+	padding-top: 25px;
 	color: dimgrey;
 	text-align: justify;
+	background-color: white;
+}
+
+.buttonarea {
+	margin-left: 255px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: white;
 }
 
@@ -80,12 +129,20 @@ body {
 	margin-bottom: 20px;
 }
 
+.name {
+	width: 100px;
+	margin: 0px;
+}
+
 .info1 {
-	margin-left: 367px;
-	padding-top: 142px;
-	margin-right: 325px;
+	width: 570px;
+	padding-right: 380px;
+	padding-left: 60px;
+	margin-left: 255px;
+	padding-top: 140px;
 	color: dimgrey;
 	text-align: justify;
+	background-color: white;
 }
 
 .title1 {
@@ -95,42 +152,55 @@ body {
 footer {
 	font-size: 10px;
 	text-align: center;
-	border-top: solid;
-	border-width: 1px;
-	border-color: gainsboro;
 	margin-top: 0px;
-	padding-top: 20px;
+	margin-left: 255px;
+	
 	margin-right: 0px;
-	padding-bottom: 0px;
-	background-color: snow;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
 	z-index: 999999999999;
 }
 
 .restaurante1 {
-	font-size: 10px;
-	font-size: 18px;
+	font-size: 16px;
 	width: 420px;
 	background-color: white;
-	margin-top: 67px;
+	margin-top: 61px;
 	padding-top: 48px;
 	padding-left: 60px;
 	margin-left: -79px;
 	margin-right: 0px;
-	padding-bottom: 36px;
+	padding-bottom: 53px;
 	float: left;
 }
 
 .restaurante2 {
-	font-size: 18px;
+	font-size: 16px;
 	width: 420px;
 	background-color: white;
-	margin-top: 67px;
+	margin-top: 63px;
 	padding-top: 68px;
 	padding-left: 60px;
 	margin-left: 0px;
 	padding-right: 50px;
-	padding-bottom: 36px;
+	padding-bottom: 50px;
 	float: right;
+}
+
+.new1 {
+	font-size: 16px;
+	float:right;
+	width: 300px;
+	height: 400px;
+	background-color: white;
+	margin-top: 45px;
+	padding-top: 48px;
+	padding-left: 60px;
+	margin-left: -79px;
+	margin-right: 0px;
+	padding-bottom: 10px;
+	float: left;
 }
 
 .direction1 {
@@ -142,23 +212,44 @@ footer {
 	height: 480px;
 	width: 570px;
 	background-color: grey;
-	margin-left: 367px;
+	margin-left: 0px;
 	margin-top: 40px;
 }
 
 .botonatras {
-	margin-left: 367px;
+	
+	margin-left: -170px;
 	width: 400px;
 	margin-bottom: 40px;
 	text-align: center;
 }
 
 .searchicon {
-	width: 35px;
+	width: 28px;
 }
 
 .enana {
-	width: 80px;
+	border-radius: 50%;
+	border: solid;
+	border-width: 1px;
+	border-color: darkgray;
+	width: 116px;
+	height: 116px;
+	margin-bottom: 0px;
+	margin-right: 15px;
+	box-shadow: 
+}
+
+.perfil {
+	
+	width: 300px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 140px;
+	border: solid;
+	border-width: 6px;
+	border-color: gainsboro;
+	
 }
 
 .pequena {
@@ -189,7 +280,7 @@ footer {
 }
 
 hr {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	background-color: gainsboro;
 	height: 1px;
 	border: 0;
