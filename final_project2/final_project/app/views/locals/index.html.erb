@@ -1,0 +1,80 @@
+        <span class="searching">
+            <%= form_tag locals_search_path, :method => 'post' do %>
+            <p>
+            <%= text_field_tag :search, params[:search] %>
+            <%= submit_tag "Search" %>
+            </p>
+            <% end %>
+        </span> 
+        
+        <div class="info">
+
+            <span class="restaurante1">
+
+                <img class="lupa" src="../ic_search_black_48dp.png"> Resultados filtrados...
+                <hr>
+
+                <% primer_num = 0 %>
+                <% ultim_num = primer_num + 1 %>
+                    
+                <% for i in (primer_num..ultim_num) do %>
+                    <%= image_tag(@locals[i].img_url, class: "enana", :id => "imagenNueva"+i.to_s )%>
+                    <%= link_to @locals[i].name, local_path(@locals[i]) %>
+
+                    <% if @locals[i].celiacous_food == true %>
+                         <img class="icono" src="celiaco.png">
+                    <% end %>
+                    <% if @locals[i].vegetarian_food == true %>
+                         <img class="icono" src="zanahoria.png">
+                    <% end %>
+                    <% if @locals[i].vegan_food == true %>
+                         <img class="icono" src="vegano.png">
+                    <% end %>
+                        
+                    <hr>
+                <% end %>
+
+            </span>
+            <span class="restaurante2">
+
+                <hr>
+
+                <% primer_num = 2 %>
+                <% ultim_num = primer_num + 1 %>
+                    
+                <% for i in (primer_num..ultim_num) do %>
+                    <%= image_tag(@locals[i].img_url, class: "enana", :id => "imagenNueva"+i.to_s )%>
+                    <%= link_to @locals[i].name, local_path(@locals[i]) %>
+
+                    <% if @locals[i].celiacous_food == true %>
+                         <img class="icono" src="celiaco.png">
+                    <% end %>
+                    <% if @locals[i].vegetarian_food == true %>
+                         <img class="icono" src="zanahoria.png">
+                    <% end %>
+                    <% if @locals[i].vegan_food == true %>
+                         <img class="icono" src="vegano.png">
+                    <% end %>
+                        
+                    <hr>
+                <% end %>
+
+            </span>
+        </div>
+
+        
+            <input type="hidden" id="locals-collection" value="<%=@locals.to_json %>">
+        
+</div>
+<span class="buttonarea">
+        <button class='button2' type="button">Anterior</button><button class='button1' type="button">Siguiente</button></span>
+
+    
+
+
+
+
+
+
+
+

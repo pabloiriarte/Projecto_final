@@ -1,0 +1,17 @@
+<span class="searching">
+            <%= form_tag locals_search_path, :method => 'post' do %>
+            <p>
+            <%= text_field_tag :search, params[:search] %>
+            <%= submit_tag "Buscar" %>
+            </p>
+            <% end %>
+</span> 
+
+<div class="info">
+  <span class="new1">
+
+    <p><img class="lupa" src="../ic_loupe_black_48dp.png"> New local information</strong></p>
+    <hr>
+
+  </span>
+</div>

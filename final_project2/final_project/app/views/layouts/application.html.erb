@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Searcher</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+	<header>
+        <img class="searchicon" src="../ic_location_on_white_48dp.png"> My Searcher
+        <span class="menubox">  <%= link_to 'Home', root_path, class: "menu" %>
+                                <%= link_to 'Registra', new_local_path, class: "menu" %>
+                                <%= link_to 'Contacto', contact_path, class: "menu" %>    
+        </span>
+  </header>
+
+  <aside class="left">
+      <div class="leftint">
+
+      <strong>Nuestros filtros</strong>
+    	
+      <p><img class="icono" src="/celiaco.png"> <%= link_to 'Celíacos', locals_path(:category => "celiacous_food") %></p>
+    	<p><img class="icono" src="/vegano.png"> <%= link_to 'Veganos', locals_path(:category => "vegan_food") %></p>
+    	<p><img class="icono" src="/zanahoria.png"> <%= link_to 'Vegetarianos', locals_path(:category => "vegetarian_food") %></p>
+    	
+      </div>
+  </aside>
+
+        
+
+  <div id="modal1" class="modalmask">
+            <div class="modalbox movedown">
+                
+                <a href="#close" title="Close" class="close">X</a>
+                <p>Galería</p><hr>
+                <ul id="carousel">
+                  <img class="grande" src="http://www.restauranteelbuey.es/restauranteelbuey_logo.png">
+                  <img class="grande" src="http://www.rodilla.es/wp-content/uploads/2013/02/logo-rodilla-Proporcionado-407x300.jpg">
+                  
+                </ul>
+
+            </div>
+  </div>
+
+<%= yield %>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src=""></script>
+<script src="http://notoyontoy.site40.net/Js/jquery.infinitecarousel3.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<%= javascript_include_tag 'application'%>
+</body>
+
+<footer>
+
+        My Searcher® 2015 - Pablo Iriarte Martínez de Lecea
+
+</footer>
+
+</html>
+ 

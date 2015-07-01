@@ -1,0 +1,76 @@
+<span class="searching">
+            <%= form_tag locals_search_path, :method => 'post' do %>
+            <p>
+            <%= text_field_tag :search, params[:search] %>
+            <%= submit_tag "Buscar" %>
+            </p>
+            <% end %>
+        </span> 
+
+<div class="info">
+  <span class="new1">
+
+    <p><img class="lupa" src="../ic_loupe_black_48dp.png"> Información del local </strong></p>
+    <hr>
+
+
+    <%= form_for [@local] do |f| %>
+      <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </p>
+     
+      <p>
+        <%= f.label :type_of_food %><br>
+        <%= f.text_area :type_of_food %>
+      </p>
+      
+      <p>
+        <%= f.label :location %><br>
+        <%= f.text_area :location %>
+      </p>
+
+      <p>
+        <%= f.label :img_url %><br>
+        <%= f.text_area :img_url %>
+     
+      
+      
+
+    </span>
+
+  <div class="new2">
+
+    <p><img class="lupa" src="../ic_loupe_black_48dp.png"> Checkbox </strong></p>
+    <hr>
+
+
+    
+      
+      <p><li><%= f.label :celiacous_food, "Comida Celíaca"  %>
+        <%= f.check_box :celiacous_food %><br></p>
+
+      <p><li><%= f.label :vegan_food, "Comida Vegana"  %>
+        <%= f.check_box :vegan_food %><br></p>
+
+      <p><li><%= f.label :vegetarian_food, "Comida Vegetariana"  %>
+        <%= f.check_box :vegetarian_food %><br></p>
+        <hr>
+      <p>
+        <%= f.submit %>
+      </p>
+      
+      <% end %>
+
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
