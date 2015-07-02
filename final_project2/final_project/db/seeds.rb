@@ -24,7 +24,7 @@ Local.create(
 	celiacous_food: true,
 	latitude: 40.423205,
 	longitude: -3.693490,
-	img_url: 'http://www.restauranteelbuey.es/restauranteelbuey_logo.png')
+	img_url: 'http://www.lacastafiore.net/wpblog/wp-content/uploads/2013/02/Bodas-2013-2.jpg')
 Local.create(
 	name: 'Celicioso', 
 	type_of_food: 'Ofrecemos tanto a los celiacos como a las personas que no sufren ninguna intolerancia al gluten la oportunidad de que experimenten, coman y comprueben que hemos conseguido elaborar un producto delicioso sin gluten.
@@ -59,7 +59,7 @@ Local.create(
 	celiacous_food: true,
 	latitude: 40.413685,
 	longitude: -3.673917,
-	img_url: 'http://www.restauranteelbuey.es/restauranteelbuey_logo.png')
+	img_url: 'http://vidatecno.net/wp-content/uploads/2012/10/restaurantelamordida155802_69802.jpg')
 Local.create(
 	name: 'Gau and go', 
 	type_of_food: 'Es un bar de sushi y hamburguesas vegetales, que pueden ser veganas si les pedís que os la liguen sin huevo. También disponen de sushi vegano. Su mayor atractivo es la terraza al aire libre, pero bueno, si el tiempo no acompaña, podéis acomodaros en el interior.',

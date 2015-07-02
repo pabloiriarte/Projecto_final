@@ -18,20 +18,23 @@
                 <% ultim_num = primer_num + 1 %>
                     
                 <% for i in (primer_num..ultim_num) do %>
-                    <%= image_tag(@locals[i].img_url, class: "enana", :id => "imagenNueva"+i.to_s )%>
-                    <%= link_to @locals[i].name, local_path(@locals[i]) %>
+                    <% if !@locals[i].nil? %>
+                        <%= image_tag(@locals[i].img_url, class: "enana", :id => "imagenNueva"+i.to_s )%>
+                        <%= link_to @locals[i].name, local_path(@locals[i]) %>
 
-                    <% if @locals[i].celiacous_food == true %>
-                         <img class="icono" src="celiaco.png">
+                        <% if @locals[i].celiacous_food == true %>
+                             <img class="icono" src="celiaco.png">
+                        <% end %>
+                        <% if @locals[i].vegetarian_food == true %>
+                             <img class="icono" src="zanahoria.png">
+                        <% end %>
+                        <% if @locals[i].vegan_food == true %>
+                             <img class="icono" src="vegano.png">
+                        <% end %>
+                    
+                            
+                        <hr>
                     <% end %>
-                    <% if @locals[i].vegetarian_food == true %>
-                         <img class="icono" src="zanahoria.png">
-                    <% end %>
-                    <% if @locals[i].vegan_food == true %>
-                         <img class="icono" src="vegano.png">
-                    <% end %>
-                        
-                    <hr>
                 <% end %>
 
             </span>
@@ -43,22 +46,24 @@
                 <% ultim_num = primer_num + 1 %>
                     
                 <% for i in (primer_num..ultim_num) do %>
-                    <%= image_tag(@locals[i].img_url, class: "enana", :id => "imagenNueva"+i.to_s )%>
-                    <%= link_to @locals[i].name, local_path(@locals[i]) %>
+                    <% if !@locals[i].nil? %>
 
-                    <% if @locals[i].celiacous_food == true %>
-                         <img class="icono" src="celiaco.png">
+                        <%= image_tag(@locals[i].img_url, class: "enana", :id => "imagenNueva"+i.to_s )%>
+                        <%= link_to @locals[i].name, local_path(@locals[i]) %>
+
+                        <% if @locals[i].celiacous_food == true %>
+                             <img class="icono" src="celiaco.png">
+                        <% end %>
+                        <% if @locals[i].vegetarian_food == true %>
+                             <img class="icono" src="zanahoria.png">
+                        <% end %>
+                        <% if @locals[i].vegan_food == true %>
+                             <img class="icono" src="vegano.png">
+                        <% end %>
+                            
+                        <hr>
                     <% end %>
-                    <% if @locals[i].vegetarian_food == true %>
-                         <img class="icono" src="zanahoria.png">
-                    <% end %>
-                    <% if @locals[i].vegan_food == true %>
-                         <img class="icono" src="vegano.png">
-                    <% end %>
-                        
-                    <hr>
                 <% end %>
-
             </span>
         </div>
 
